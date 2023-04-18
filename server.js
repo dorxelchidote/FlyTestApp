@@ -3,10 +3,10 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get(["/", "/:name"], (req, res) => {
-  greeting = "<h1>Hello From Node on Fly!</h1>";
+  greeting = "<h1>Hello World. I'm Node App</h1>";
   name = req.params["name"];
   if (name) {
-    res.send(greeting + "</br>and hello to " + name);
+    res.send(greeting + "</br>And my name is " + name);
   } else {
     res.send(greeting);
   }
