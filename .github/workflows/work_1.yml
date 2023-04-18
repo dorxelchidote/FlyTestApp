@@ -8,10 +8,3 @@ jobs:
       run: echo "Hola Pitaya!"
     - name: Print Something 2
       run: echo "Esto es otra impresión"
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Print Something B2
-      run: echo "DEL BIILD 2 Hola Pitaya!"
-    - name: Print Something B2-2
-      run: echo "DEL BUILD 2 Esto es otra impresión"
