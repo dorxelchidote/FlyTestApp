@@ -1,10 +1,11 @@
 name: Work 1 Dorx
-on: [push]
+on: 
+  push:
+    branches:
+      - test
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Print Something
       run: echo "Hola Pitaya!"
-    - name: Print Something 2
-      run: echo "Esto es otra impresión"
