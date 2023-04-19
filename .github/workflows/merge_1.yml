@@ -14,7 +14,7 @@ jobs:
           ref: main
 
       - name: Merge test branch
-        run: git merge --no-ff origin/test -m "Merge branch 'test' into main"
+        run: git merge test -m "Merge branch 'test' into main"
 
       - name: Push changes to main branch
         uses: ad-m/github-push-action@master
