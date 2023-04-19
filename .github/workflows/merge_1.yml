@@ -19,7 +19,7 @@ jobs:
           ref: main
 
       - name: Merge test branch
-        run: git merge --no-ff origin/test -m "Merge 'test' into main"
+        run: git merge --no-ff origin/test -m "Merge 'test' into main" --allow-unrelated-histories
 
       - name: Push changes to main branch
         uses: ad-m/github-push-action@master
