@@ -8,6 +8,11 @@ jobs:
   merge:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout test branch
+        uses: actions/checkout@v3
+        with:
+          ref: test
+
       - name: Checkout main branch
         uses: actions/checkout@v3
         with:
