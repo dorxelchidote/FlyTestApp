@@ -1,8 +1,5 @@
 name: Work 1 Dorx
-on: 
-  push:
-    branches:
-      - test
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
