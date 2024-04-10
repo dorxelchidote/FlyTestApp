@@ -9,3 +9,5 @@ jobs:
     steps:
     - name: Print Something
       run: echo "Hola Pitaya!"
+    - name: Print Something
+      run: echo "Hola Pitaya 2!"
